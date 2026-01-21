@@ -101,4 +101,4 @@ To name a Geometry, TimeManifold, or RubberbandPresent manifold, the string must
 &nbsp; and p is replaced with a comma separated list of an even number of integers. All of this refers to a Siefert fiber space with the corresponding notation
 * `@Tora{N,R}` where N is replaced with the (|||)-type toratope notation, and R is replaced with a comma-separated list of radii in order of closing
 &nbsp; brackets.
-* `{G}\*` where G is a comma-separated list of names in this system refers to the product of the represented manifolds.
+* `{G}*` where G is a comma-separated list of names in this system refers to the product of the represented manifolds.
