@@ -10,6 +10,8 @@ time.
 
 In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the following keys:
 
+
+
 | - | - | - | - |
 
 | Name | Type | Description | Default |
@@ -24,6 +26,8 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the following keys:
 
+
+
 | - | - | - | - |
 
 | Name | Type | Description | Default |
@@ -35,6 +39,8 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 \# Geometry object
+
+
 
 | - | - | - | - |
 
@@ -50,6 +56,8 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 \# TimeManifold object
 
+
+
 | - | - | - | - |
 
 | Name | Type | Description | Default |
@@ -63,6 +71,8 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 \# RubberbandPresentManifold object
+
+
 
 | - | - | - | - |
 
@@ -80,6 +90,8 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 \# DeadTimelineComplex object
 
+
+
 | - | - | - | - |
 
 | Name | Type | Description | Default |
@@ -91,6 +103,8 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 \# Timeline object
+
+
 
 | - | - | - | - |
 
@@ -105,6 +119,8 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 \# Instant object
+
+
 
 | - | - | - | - |
 
@@ -125,6 +141,8 @@ Exactly one of `point\_in\_time\_euclidean` or `point\_in\_time` are required. `
 
 
 \# InstantPath object
+
+
 
 | - | - | - | - |
 
