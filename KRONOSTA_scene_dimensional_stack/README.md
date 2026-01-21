@@ -55,8 +55,8 @@ In `extensions/KRONOSTA_scene_dimensional_stack`, there is an object with the fo
 
 | Name | Type | Description | Default |
 | --- | --- | --- | --- |
-| point_in_time_euclidean | number\[] | A representation of the point in the time manifold, if the manifold is Euclidean. | null |
-| point_in_time | number\[] | A representation of the point in the time manifold, in an unspecified format involving only numbers (if you want to store other data you can use this as a byte array). | null |
+| point_in_time_euclidean | number[] | A representation of the point in the time manifold, if the manifold is Euclidean. | null |
+| point_in_time | number[] | A representation of the point in the time manifold, in an unspecified format involving only numbers (if you want to store other data you can use this as a byte array). | null |
 | scene | object | A file ref for the G4MF scene file. This may contain another dimensional stack. | {} |
 
 Exactly one of `point_in_time_euclidean` or `point_in_time` are required. `point_in_time` requires agreement about the format not provided in this document.
@@ -73,8 +73,8 @@ Exactly one of `point_in_time_euclidean` or `point_in_time` are required. `point
 
 # Standard names of manifolds
 To name a Geometry, TimeManifold, or RubberbandPresent manifold, the string must follow this system:
-* A name can consist of `\&` followed by a match to the regex (\[A-Za-z0-9_]|\\{\\R(,\\R)\*\\})+ where \\R recursively refers to the entire regex for custom manifolds
-* Any name can be suffixed with `#` followed by  a match to the regex (\[A-Za-z0-9_]|\\{\\R(,\\R)\*\\})+ where \\R recursively refers to the entire regex for multiple of the same manifold
+* A name can consist of `&` followed by a match to the regex `([A-Za-z0-9_]|\{\R(,\R)*\})+` where \R recursively refers to the entire regex for custom manifolds
+* Any name can be suffixed with `#` followed by  a match to the regex `([A-Za-z0-9_]|\{\R(,\R)*\})+` where \R recursively refers to the entire regex for multiple of the same manifold
 * `@E` followed by a number N refers to N-dimensional Euclidean space
 * `@T` followed by a number N refers to the N-dimensional flat torus
 * `@TG` followed by a number N refers to the orientable toroidal 2-manifold of genus N
@@ -94,7 +94,7 @@ To name a Geometry, TimeManifold, or RubberbandPresent manifold, the string must
 * `@TH` followed by a number N refers to the tangent bundle of N-dimensional hyperbolic space (F4 can be written as `@TH2`
 * `@CP` followed by a number N to the complex projective space of dimension N
 * `@HC` followed by a number N refers to H^N(C) geometry
-* `@AndrewGeng` followed by a number N refers to the Nth geometry in \[https://arxiv.org/pdf/1605.07545]
+* `@AndrewGeng` followed by a number N refers to the Nth geometry in [https://arxiv.org/pdf/1605.07545]
 * `@SL2X_{N}S3` and `@SL2X_{N}SL2` where N is replaced by a decimal number (above zero in both cases and less than or equal to one in the latter) refer to geometries in the above paper.
 * `L{A,1}X_{S1}L{B,1}` where A and B are replaced with two coprime integers greater than zero refer to geometries in the above paper.
 * `@Seifert{b,e,g,p}` where b is replaced with an integer, g is replaced with a natural number, e is replaced with `o1`, `o2`, `n1`, `n2`, `n3`, or `n4`, 
