@@ -8,7 +8,6 @@ In `extensions/KRONOSTA_scene_dimensional_stack`, there is an object with the fo
 | Name | Type | Description | Default |
 | --- | --- | --- | --- |
 | geometries | `object` | A dictionary of geometry names to Geometry objects. | {} |
-| --- | --- | --- | --- |
 
 # Added to Node object
 In `extensions/KRONOSTA_scene_dimensional_stack`, there is an object with the following keys:
@@ -16,7 +15,6 @@ In `extensions/KRONOSTA_scene_dimensional_stack`, there is an object with the fo
 | Name | Type | Description | Default |
 | --- | --- | --- | --- |
 | origin | `object` | An instant path describing where this node originated, if it traveled from another world, or null if it came from here. | null |
-| --- | --- | --- | --- |
 
 # Geometry object
 
@@ -24,7 +22,6 @@ In `extensions/KRONOSTA_scene_dimensional_stack`, there is an object with the fo
 | --- | --- | --- | --- |
 | time_manifolds | `object` | A dictionary of time manifold names to TimeManifold objects | {} |
 | dimension | `integer` | The dimension for this geometry. | Required ||
-| --- | --- | --- | --- |
 
 # TimeManifold object
 
@@ -32,7 +29,6 @@ In `extensions/KRONOSTA_scene_dimensional_stack`, there is an object with the fo
 | --- | --- | --- | --- |
 | rubberband_present_manifolds | `object` | A dictionary of time manifold names to RubberbandPresentManifold objects | {} |
 | dimension | `integer` | The dimension for this time manifold. | Required |
-| --- | --- | --- | --- |
 
 # RubberbandPresentManifold object
 
@@ -41,14 +37,12 @@ In `extensions/KRONOSTA_scene_dimensional_stack`, there is an object with the fo
 | main_timeline | `object` | A Timeline object for the current timeline of this world. | {} |
 | dead_timelines | `object` | A DeadTimelineComplex for dead timelines. | {} |
 | dimension | `integer` | The dimension for this rubberband present manifold. | Required |
-| --- | --- | --- | --- |
 
 # DeadTimelineComplex object
 
 | Name | Type | Description | Default |
 | --- | --- | --- | --- |
 | timelines | object | A dictionary of timeline names to Timeline objects.
-| --- | --- | --- | --- |
 
 # Timeline object
 
@@ -56,7 +50,6 @@ In `extensions/KRONOSTA_scene_dimensional_stack`, there is an object with the fo
 | --- | --- | --- | --- |
 | instants | object | A dictionary of instant names to Instant objects. | Required |
 | current_instant | string | The name of the current instant of this timeline. | Required |
-| --- | --- | --- | --- |
 
 # Instant object
 
@@ -65,7 +58,6 @@ In `extensions/KRONOSTA_scene_dimensional_stack`, there is an object with the fo
 | point_in_time_euclidean | number\[] | A representation of the point in the time manifold, if the manifold is Euclidean. | null |
 | point_in_time | number\[] | A representation of the point in the time manifold, in an unspecified format involving only numbers (if you want to store other data you can use this as a byte array). | null |
 | scene | object | A file ref for the G4MF scene file. This may contain another dimensional stack. | {} |
-| --- | --- | --- | --- |
 
 Exactly one of `point_in_time_euclidean` or `point_in_time` are required. `point_in_time` requires agreement about the format not provided in this document.
 
@@ -78,7 +70,6 @@ Exactly one of `point_in_time_euclidean` or `point_in_time` are required. `point
 | rubberband_present_manifold | string | The name of the rubberband present manifold. | "@E0" |
 | timeline | string | The name of the dead timeline, or null for the main timeline. | null |
 | instant | string | The name of the instant. | "Present" |
-| --- | --- | --- | --- |
 
 # Standard names of manifolds
 To name a Geometry, TimeManifold, or RubberbandPresent manifold, the string must follow this system:
