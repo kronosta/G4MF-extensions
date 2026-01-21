@@ -12,13 +12,13 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 
-| -- | -- | -- | -- |
-
 | Name | Type | Description | Default |
+
+| --- | --- | --- | --- |
 
 | geometries | `object` | A dictionary of geometry names to Geometry objects. | {} |
 
-| -- | -- | -- | -- |
+| --- | --- | --- | --- |
 
 
 
@@ -28,13 +28,13 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 
-| -- | -- | -- | -- |
-
 | Name | Type | Description | Default |
+
+| --- | --- | --- | --- |
 
 | origin | `object` | An instant path describing where this node originated, if it traveled from another world, or null if it came from here. | null |
 
-| -- | -- | -- | -- |
+| --- | --- | --- | --- |
 
 
 
@@ -42,15 +42,15 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 
-| -- | -- | -- | -- |
-
 | Name | Type | Description | Default |
+
+| --- | --- | --- | --- |
 
 | time\_manifolds | `object` | A dictionary of time manifold names to TimeManifold objects | {} |
 
 | dimension | `integer` | The dimension for this geometry. | Required ||
 
-| -- | -- | -- | -- |
+| --- | --- | --- | --- |
 
 
 
@@ -58,15 +58,15 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 
-| -- | -- | -- | -- |
-
 | Name | Type | Description | Default |
+
+| --- | --- | --- | --- |
 
 | rubberband\_present\_manifolds | `object` | A dictionary of time manifold names to RubberbandPresentManifold objects | {} |
 
 | dimension | `integer` | The dimension for this time manifold. | Required |
 
-| -- | -- | -- | -- |
+| --- | --- | --- | --- |
 
 
 
@@ -74,9 +74,9 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 
-| -- | -- | -- | -- |
-
 | Name | Type | Description | Default |
+
+| --- | --- | --- | --- |
 
 | main\_timeline | `object` | A Timeline object for the current timeline of this world. | {} |
 
@@ -84,7 +84,7 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 | dimension | `integer` | The dimension for this rubberband present manifold. | Required |
 
-| -- | -- | -- | -- |
+| --- | --- | --- | --- |
 
 
 
@@ -92,13 +92,13 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 
-| -- | -- | -- | -- |
-
 | Name | Type | Description | Default |
+
+| --- | --- | --- | --- |
 
 | timelines | object | A dictionary of timeline names to Timeline objects.
 
-| -- | -- | -- | -- |
+| --- | --- | --- | --- |
 
 
 
@@ -106,15 +106,15 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 
-| -- | -- | -- | -- |
-
 | Name | Type | Description | Default |
+
+| --- | --- | --- | --- |
 
 | instants | object | A dictionary of instant names to Instant objects. | Required |
 
 | current\_instant | string | The name of the current instant of this timeline. | Required |
 
-| -- | -- | -- | -- |
+| --- | --- | --- | --- |
 
 
 
@@ -122,9 +122,9 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 
 
-| -- | -- | -- | -- |
-
 | Name | Type | Description | Default |
+
+| --- | --- | --- | --- |
 
 | point\_in\_time\_euclidean | number\[] | A representation of the point in the time manifold, if the manifold is Euclidean. | null |
 
@@ -132,7 +132,7 @@ In `extensions/KRONOSTA\_scene\_dimensional\_stack`, there is an object with the
 
 | scene | object | A file ref for the G4MF scene file. This may contain another dimensional stack. | {} |
 
-| -- | -- | -- | -- |
+| --- | --- | --- | --- |
 
 
 
@@ -144,9 +144,9 @@ Exactly one of `point\_in\_time\_euclidean` or `point\_in\_time` are required. `
 
 
 
-| -- | -- | -- | -- |
-
 | Name | Type | Description | Default |
+
+| --- | --- | --- | --- |
 
 | geometry | string | The name of the geometry. | "@E4" |
 
@@ -158,7 +158,7 @@ Exactly one of `point\_in\_time\_euclidean` or `point\_in\_time` are required. `
 
 | instant | string | The name of the instant. | "Present" |
 
-| -- | -- | -- | -- |
+| --- | --- | --- | --- |
 
 
 
